@@ -1,0 +1,203 @@
+rule-providers:
+  AI:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/AI.list"
+    path: ./ruleset/AI.list
+    interval: 86400
+    proxy: OpenAI
+
+  Apple:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Apple.list"
+    path: ./ruleset/Apple.list
+    interval: 86400
+    proxy: Apple
+
+  DMM:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/DMM.list"
+    path: ./ruleset/DMM.list
+    interval: 86400
+    proxy: JP
+
+  Epic:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Epic.list"
+    path: ./ruleset/Epic.list
+    interval: 86400
+    proxy: JP
+
+  Github:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Github.list"
+    path: ./ruleset/Github.list
+    interval: 86400
+    proxy: JP
+
+  Google:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Google.list"
+    path: ./ruleset/Google.list
+    interval: 86400
+    proxy: Google
+
+  Meta:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Meta.list"
+    path: ./ruleset/Meta.list
+    interval: 86400
+    proxy: JP
+
+  Microsoft:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Microsoft.list"
+    path: ./ruleset/Microsoft.list
+    interval: 86400
+    proxy: Microsoft
+
+  Netflix:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Netflix.list"
+    path: ./ruleset/Netflix.list
+    interval: 86400
+    proxy: Netflix
+
+  Niconico:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Niconico.list"
+    path: ./ruleset/Niconico.list
+    interval: 86400
+    proxy: JP
+
+  Pixiv:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Pixiv.list"
+    path: ./ruleset/Pixiv.list
+    interval: 86400
+    proxy: JP
+
+  PrimeVideo:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/PrimeVideo.list"
+    path: ./ruleset/PrimeVideo.list
+    interval: 86400
+    proxy: JP
+
+  Reddit:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Reddit.list"
+    path: ./ruleset/Reddit.list
+    interval: 86400
+    proxy: JP
+
+  Steam:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Steam.list"
+    path: ./ruleset/Steam.list
+    interval: 86400
+    proxy: Steam
+
+  StellaSoraJP:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/StellaSoraJP.list"
+    path: ./ruleset/StellaSoraJP.list
+    interval: 86400
+    proxy: JP
+
+  Telegram:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Telegram.list"
+    path: ./ruleset/Telegram.list
+    interval: 86400
+    proxy: Telegram
+
+  Twitch:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Twitch.list"
+    path: ./ruleset/Twitch.list
+    interval: 86400
+    proxy: JP
+
+  Unity:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Unity.list"
+    path: ./ruleset/Unity.list
+    interval: 86400
+    proxy: JP
+
+  X:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/X.list"
+    path: ./ruleset/X.list
+    interval: 86400
+    proxy: JP
+
+  YouTube:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Youtube.list"
+    path: ./ruleset/Youtube.list
+    interval: 86400
+    proxy: YouTube
+
+# 这里的规则会插入机场规则最前面，优先级最高。
++rules:
+  - RULE-SET,AI,OpenAI
+  - RULE-SET,Apple,DIRECT
+  - RULE-SET,DMM,JP
+  - RULE-SET,Epic,JP
+  - RULE-SET,Github,JP
+  - RULE-SET,Google,JP
+  - RULE-SET,Meta,JP
+  - RULE-SET,Microsoft,Microsoft
+  - RULE-SET,Netflix,Netflix
+  - RULE-SET,Niconico,JP
+  - RULE-SET,Pixiv,JP
+  - RULE-SET,PrimeVideo,JP
+  - RULE-SET,Reddit,JP
+  - RULE-SET,Steam,Steam
+  - RULE-SET,StellaSoraJP,JP
+  - RULE-SET,Telegram,Telegram
+  - RULE-SET,Twitch,JP
+  - RULE-SET,Unity,JP
+  - RULE-SET,X,JP
+  - RULE-SET,Youtube,YouTube
