@@ -170,14 +170,6 @@ rule-providers:
     interval: 86400
     proxy: JP
 
-  YouTube:
-    type: http
-    behavior: classical
-    format: text
-    url: "https://raw.githubusercontent.com/AMEKIN/Surge/main/rules/Youtube.list"
-    path: ./ruleset/Youtube.list
-    interval: 86400
-    proxy: HK
 
 # 这里的规则会插入机场规则最前面，优先级最高。
 +rules:
@@ -200,4 +192,3 @@ rule-providers:
   - RULE-SET,Twitch,JP
   - RULE-SET,Unity,JP
   - RULE-SET,X,JP
-  - RULE-SET,Youtube,HK
