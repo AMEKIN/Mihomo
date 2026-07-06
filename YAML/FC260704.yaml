@@ -174,7 +174,7 @@ rule-providers:
 # 这里的规则会插入机场规则最前面，优先级最高。
 +rules:
   - RULE-SET,AI,OpenAI
-  - RULE-SET,Apple,DIRECT
+  - RULE-SET,Apple,Apple
   - RULE-SET,DMM,JP
   - RULE-SET,Epic,JP
   - RULE-SET,Github,JP
